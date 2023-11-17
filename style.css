@@ -1,0 +1,20 @@
+button {
+    background-color: #6f101e; /* couleur de fond */
+    border: none; /* si style différent : 2px solid black */
+    color: white; /* couleur du texte */
+    padding: none; /* espace intérieur */
+    text-align: center; /* alignement du texte */
+    text-decoration: none; /* pas de soulignement */
+    display: inline-block;
+    font-size: 16px; /* taille du texte */
+    margin: 1px 1px; /* espace extérieur */
+    cursor: pointer; /* forme du curseur */
+    border-radius: 12px; /* coins arrondis */
+    width: 12.5%;
+    height: 10%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
