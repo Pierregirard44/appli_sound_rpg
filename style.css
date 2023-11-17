@@ -7,14 +7,20 @@ button {
     text-decoration: none; /* pas de soulignement */
     display: inline-block;
     font-size: 16px; /* taille du texte */
-    margin: 1px 1px; /* espace extérieur */
+    margin: 10px 10px; /* espace extérieur */
     cursor: pointer; /* forme du curseur */
     border-radius: 12px; /* coins arrondis */
-    width: 12.5%;
-    height: 10%;
+    width: calc(100% - 20px); /* largeur du bouton */
+    height: auto;
 }
 
 img {
     width: 100%;
     height: 100%;
 }
+
+#containerButton {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
+    grid-gap: 5px; /* Marge entre les éléments */
+  }
