@@ -1,3 +1,38 @@
-@tailwind base;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+button {
+  background-color: #0d051f; /* couleur de fond */
+  border: none; /* si style différent : 2px solid black */
+  color: white; /* couleur du texte */
+  padding: none; /* espace intérieur */
+  text-align: center; /* alignement du texte */
+  text-decoration: none; /* pas de soulignement */
+  display: inline-block;
+  font-size: 16px; /* taille du texte */
+  margin: 10px 10px; /* espace extérieur */
+  cursor: pointer; /* forme du curseur */
+  border-radius: 12px; /* coins arrondis */
+  width: calc(100% - 20px); /* largeur du bouton */
+  height: auto;
+}
+
+body {
+  background-color: #cbcaae;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#containerButton {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
+  grid-gap: 5px; /* Marge entre les éléments */
+}
