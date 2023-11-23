@@ -51,6 +51,13 @@ img {
   grid-gap: 5px; /* Marge entre les éléments */
 }
 
+#containerButtonMagic {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
+  grid-gap: 5px; /* Marge entre les éléments */
+}
+
+
 #titleCategory {
   text-align: center;
   font-style: italic;

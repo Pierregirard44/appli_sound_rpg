@@ -1,22 +1,22 @@
 import React, { useRef } from "react";
-import fireball from "../../icons/fireball.png";
-import fireballSound from "../../sounds/fireball.mp3";
+import Mace from "../../icons/mace.png";
+import MaceHit from "../../sounds/maceHit.mp3";
 
 const MyComponent = () => {
   const audioRef = useRef(null);
 
   const playSound = () => {
     audioRef.current.play();
-    console.log("vouuush PAOW !");
+    console.log("Klong !");
   };
 
   return (
     <div>
       <button onClick={playSound}>
-        <img src={fireball} alt="icon" />
+        <img src={Mace} alt="icon" />
       </button>
       <audio ref={audioRef}>
-        <source src={fireballSound} type="audio/mp3" />
+        <source src={MaceHit} type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>
     </div>

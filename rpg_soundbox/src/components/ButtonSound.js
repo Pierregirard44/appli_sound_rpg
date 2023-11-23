@@ -17,6 +17,7 @@ import ButtonSwordFight from "./buttonWeapon/ButtonSwordFight";
 import ButtonSwordSlash from "./buttonWeapon/ButtonSwordSlash";
 import ButtonCricket from "./buttonAnimal/ButtonCricket";
 import ButtonFireball from "./buttonMagic/ButtonFireball";
+import ButtonMaceHit from "./buttonWeapon/ButtonMaceHit";
 
 const ButtonSound = () => {
   return (
@@ -27,6 +28,7 @@ const ButtonSound = () => {
         <div id="containerButtonWeapon">
           <ButtonSwordSlash />
           <ButtonSwordFight />
+          <ButtonMaceHit />
         </div>
 
         <h2 id="titleCategory">Fioouuu pan pan magic !!</h2>
