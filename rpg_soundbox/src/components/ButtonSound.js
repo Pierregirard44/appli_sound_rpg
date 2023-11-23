@@ -8,11 +8,11 @@ import ButtonTigerRoar from './buttonAnimal/ButtonTigerRoar';
 import ButtonWolfHowl from './buttonAnimal/ButtonWolfHowl';
 import ButtonLaughDemoniac from './buttonMonster/ButtonLaughDemoniac';  
 import ButtonLaughFemale from './buttonHuman/ButtonLaughFemale';  
-import laughMale from "../icons/laughMale.png";
-import screamFemale from "../icons/screamFemale.png";
-import screamMale from "../icons/screamMale.png";
-import warcryFemale from "../icons/warcryFemale.png";
-import warcryMale from "../icons/warcryMale.png";
+import ButtonLaughMale from './buttonHuman/ButtonLaughMale';
+import ButtonScreamFemale from './buttonHuman/ButtonScreamFemale';
+import ButtonScreamMale from './buttonHuman/ButtonScreamMale';
+import ButtonWarcryFemale from './buttonHuman/ButtonWarcryFemale';
+import ButtonWarcryMale from './buttonHuman/ButtonWarcryMale';
 import ButtonSwordFight from './buttonWeapon/ButtonSwordFight';
 import ButtonSwordSlash from './buttonWeapon/ButtonSwordSlash';
 
@@ -43,26 +43,11 @@ const ButtonSound = () => {
         <h2 id="titleCategory">And scream and shout and let it out</h2>
         <div id="containerButtonHuman">
           <ButtonLaughFemale />
-
-          <button id="buttonLaughMale">
-            <img src={laughMale} alt="icon" />
-          </button>
-
-          <button id="buttonScreamFemale">
-            <img src={screamFemale} alt="icon" />
-          </button>
-
-          <button id="buttonScreamMale">
-            <img src={screamMale} alt="icon" />
-          </button>
-
-          <button id="buttonWarcryFemale">
-            <img src={warcryFemale} alt="icon" />
-          </button>
-
-          <button id="buttonWarcryMale">
-            <img src={warcryMale} alt="icon" />
-          </button>
+          <ButtonLaughMale />
+          <ButtonScreamFemale />
+          <ButtonScreamMale />
+          <ButtonWarcryFemale />
+          <ButtonWarcryMale />
         </div>
 
         <h2 id="titleCategory">Big Bad Monsters Oulalaaaaa</h2>
