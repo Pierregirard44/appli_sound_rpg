@@ -6,8 +6,8 @@ import ButtonMonkeyScream from './buttonAnimal/ButtonMonkeyScream';
 import ButtonOwlNoise from './buttonAnimal/ButtonOwlNoise';
 import ButtonTigerRoar from './buttonAnimal/ButtonTigerRoar';
 import ButtonWolfHowl from './buttonAnimal/ButtonWolfHowl';
-import laughDemoniac from "../icons/laughDemoniac.png";
-import laughFemale from "../icons/laughingFemale.png";
+import ButtonLaughDemoniac from './buttonMonster/ButtonLaughDemoniac';  
+import ButtonLaughFemale from './buttonHuman/ButtonLaughFemale';  
 import laughMale from "../icons/laughMale.png";
 import screamFemale from "../icons/screamFemale.png";
 import screamMale from "../icons/screamMale.png";
@@ -42,10 +42,7 @@ const ButtonSound = () => {
 
         <h2 id="titleCategory">And scream and shout and let it out</h2>
         <div id="containerButtonHuman">
-
-          <button id="buttonLaughFemale">
-            <img src={laughFemale} alt="icon" />
-          </button>
+          <ButtonLaughFemale />
 
           <button id="buttonLaughMale">
             <img src={laughMale} alt="icon" />
@@ -70,9 +67,7 @@ const ButtonSound = () => {
 
         <h2 id="titleCategory">Big Bad Monsters Oulalaaaaa</h2>
         <div id="containerButtonMonster">
-        <button id="buttonLaughDemoniac">
-            <img src={laughDemoniac} alt="icon" />
-          </button>
+          <ButtonLaughDemoniac />
         </div>
 
       </div>
