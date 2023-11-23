@@ -21,6 +21,7 @@ import ButtonMaceHit from "./buttonWeapon/ButtonMaceHit";
 import ButtonZombieGrowl from "./buttonMonster/ButtonZombieGrowl";
 import ButtonHeal from "./buttonMagic/ButtonHeal";
 import ButtonDragon from "./buttonMonster/ButtonDragon";
+import ButtonBigMonster from "./buttonMonster/ButtonBigMonster";
 
 const ButtonSound = () => {
   return (
@@ -67,6 +68,7 @@ const ButtonSound = () => {
           <ButtonLaughDemoniac />
           <ButtonZombieGrowl />
           <ButtonDragon />
+          <ButtonBigMonster />
         </div>
       </div>
     </>
