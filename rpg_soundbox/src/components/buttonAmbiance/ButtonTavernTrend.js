@@ -7,7 +7,7 @@ const MyComponent = () => {
 
   const playSound = () => {
         audioRef.current.play();
-        console.log("Miaou");
+        console.log("Tututututtu tutu tututuuuuuuu");
   };
 
   return (
