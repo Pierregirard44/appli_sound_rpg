@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities; */
 
+body {
+  background-image: url("./images/auberge.jpg");
+}
+
 button {
   background-color: #0d051f; /* couleur de fond */
   border: none; /* si style différent : 2px solid black */
