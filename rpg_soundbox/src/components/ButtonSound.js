@@ -23,12 +23,19 @@ import ButtonHeal from "./buttonMagic/ButtonHeal";
 import ButtonDragon from "./buttonMonster/ButtonDragon";
 import ButtonBigMonster from "./buttonMonster/ButtonBigMonster";
 import ButtonBow from "./buttonWeapon/ButtonBow";
+import ButtonTavernTrend from "./buttonAmbiance/ButtonTavernTrend";
 
 const ButtonSound = () => {
   return (
     <>
       {" "}
+
       <div id="containerButtonSound">
+        <h2 id="titleCategory">Banger d'ambiançage medieval style</h2>
+        <div id="containerButtonAmbiance">
+          <ButtonTavernTrend /> 
+        </div>
+
         <h2 id="titleCategory">Gros sons de combats sa mère</h2>
         <div id="containerButtonWeapon">
           <ButtonSwordSlash />
