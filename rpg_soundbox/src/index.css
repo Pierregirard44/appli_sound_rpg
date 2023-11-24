@@ -7,11 +7,18 @@
 @tailwind utilities; */
 
 body {
-  background-image: url("./images/auberge.jpg");
+  background-image: url("./images/auberge.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#root {
+  background-color: rgba(0, 0, 0, 0.477);
 }
 
 button {
-  background-color: #0d051f; /* couleur de fond */
+  z-index: 1;
+  background-color: #000000; /* couleur de fond */
   border: none; /* si style différent : 2px solid black */
   color: white; /* couleur du texte */
   padding: none; /* espace intérieur */
