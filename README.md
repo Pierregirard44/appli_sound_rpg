@@ -1,10 +1,10 @@
-# appli_sound_rpg
+# 🔈appli_sound_rpg
 
 An amateur application for rpg player to launch some cool sound
 
 ## Story
 
-### Beginning
+### 🏁 Beginning
 
 It started from a challenge we decided to face, a "one day, one app", as we named it.  
 We both love roleplay games, therefore we naturally came to the idea of creating an app to give more spice to roleplay party.  
@@ -14,7 +14,7 @@ We started our project by creating vanilla javascript codes and html/css.
 We created some buttons with some sounds that we downloaded from free-to-use sounds library.  
 And that was our first MVP.
 
-### Keep Going
+### 🔥 Keep Going
 
 But we wanted to go further, and we wanted to make it more consistent and improve our application.  
 we decided to migrate our project into a fullstack javascript project.  
@@ -28,16 +28,16 @@ We also want to put more sounds into our soundbox, and make it possible to have 
 
 ## How to use it
 
-### Which device
+### 📱 Which device
 
 This project is made to be used on phone interfaces. It will be responsive but will be more suitable for phones, as it is supposed to be used during RolePlay parties, which means that the game master is unlikely to have his computer opened.
 
-### How to install the project on your computer
+### 📂How to install the project on your computer
 
 After downloading the zip file and opening the project in your fav IDE, you will have to write down your terminal:  
 $ cd rpg_soundbox  
 $ npm i
 
-#### This project is still under construction, we are working on it during our spare time.
+#### 🏗️This project is still under construction, we are working on it during our spare time.
 
 With this project, we want to improve our skills using Node.js, especially for the backEnd part, while having fun with a subject we love, heroic fantasy and roleplay game !
