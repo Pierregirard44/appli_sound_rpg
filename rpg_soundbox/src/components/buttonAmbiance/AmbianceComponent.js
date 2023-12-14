@@ -4,7 +4,7 @@ import ButtonTavernTrend from "./ButtonTavernTrend";
 
 const AmbianceAll = () => {
   return (
-    <div id="containerButtonAmbiance">
+    <div id="containerButtonSound">
       <h2 id="titleCategory">Banger d'ambiançage medieval style</h2>
       <div id="containerButtonAmbiance">
         <ButtonTavernTrend />

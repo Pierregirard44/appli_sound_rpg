@@ -6,7 +6,7 @@ import ButtonBigMonster from "./ButtonBigMonster";
 
 const AmbianceAll = () => {
     return (
-        <div id="containerButtonMagic">
+        <div id="containerButtonSound">
             <h2 id="titleCategory">Big Bad Monsters Oulalaaaaa</h2>
                 <div id="containerButtonMonster">
                 <ButtonLaughDemoniac />

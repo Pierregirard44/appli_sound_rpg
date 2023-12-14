@@ -9,7 +9,7 @@ import ButtonWarcryMale from "./ButtonWarcryMale";
 
 const AmbianceAll = () => {
     return (
-        <div id="containerButtonHuman">
+        <div id="containerButtonSound">
             <h2 id="titleCategory">And scream and shout and let it out</h2>
                 <div id="containerButtonHuman">
                 <ButtonLaughFemale />

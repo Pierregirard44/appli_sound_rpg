@@ -5,7 +5,7 @@ import ButtonHeal from "./ButtonHeal";
 
 const AmbianceAll = () => {
     return (
-        <div id="containerButtonMagic">
+        <div id="containerButtonSound">
             <h2 id="titleCategory">Fioouuu pan pan magic !!</h2>
                 <div id="containerButtonMagic">
                 <ButtonFireball />

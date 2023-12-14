@@ -6,7 +6,7 @@ import ButtonBow from "./ButtonBow";
 
 const AmbianceAll = () => {
     return (
-        <div id="containerButtonHuman">
+        <div id="containerButtonSound">
             <h2 id="titleCategory">Gros sons de combats sa mère</h2>
                 <div id="containerButtonWeapon">
                 <ButtonSwordSlash />

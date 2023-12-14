@@ -10,7 +10,7 @@ import ButtonCricket from "./ButtonCricket";
 
 const AmbianceAll = () => {
     return (
-        <div id="containerButtonAnimal">
+        <div id="containerButtonSound">
             <h2 id="titleCategory">Sons de potits animaux Grrr Grrr</h2>
                 <div id="containerButtonAnimal">
                 <ButtonCatMeow />
