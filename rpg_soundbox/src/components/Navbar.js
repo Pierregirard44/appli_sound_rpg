@@ -1,46 +1,49 @@
+// eslint-disable-next-line no-unused-vars
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <nav className="bg-black">
       <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
-        <a
-          href="#"
+        <link
+          to="/ambiance"
           class="border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500 mx-1.5 sm:mx-6"
         >
           Ambiance
-        </a>
+        </link>
 
-        <a
-          href="#"
+        <link
+          to="/armes"
           class="border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500 mx-1.5 sm:mx-6"
         >
           Armes
-        </a>
+        </link>
 
-        <a
-          href="#"
+        <link
+          to="/magie"
           class="border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500 mx-1.5 sm:mx-6"
         >
           Magie
-        </a>
+        </link>
 
-        <a
-          href="#"
+        <link
+          to="/animaux"
           class="border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500 mx-1.5 sm:mx-6"
         >
           Animaux
-        </a>
-        <a
-          href="#"
+        </link>
+        <link
+          to="/humains"
           class="border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500 mx-1.5 sm:mx-6"
         >
           Humains
-        </a>
-        <a
-          href="#"
+        </link>
+        <link
+          to=""
           class="border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500 mx-1.5 sm:mx-6"
         >
           Monstres
-        </a>
+        </link>
       </div>
     </nav>
   );
