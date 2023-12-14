@@ -4,12 +4,12 @@ import ButtonSound from "./components/ButtonSound";
 import Navbar from "./components/Navbar";
 
 // Importe tes composants spécifiques pour chaque catégorie ici
-import AmbianceComponent from "./components/AmbianceComponent";
-import ArmesComponent from "./components/ArmesComponent";
-import MagieComponent from "./components/MagieComponent";
-import AnimauxComponent from "./components/AnimauxComponent";
-import HumainsComponent from "./components/HumainsComponent";
-import MonstresComponent from "./components/MonstresComponent";
+import AmbianceComponent from "./components/buttonAmbiance/AmbianceComponent";
+import ArmesComponent from "./components/buttonWeapon/ArmesComponent";
+import MagieComponent from "./components/buttonMagic/MagieComponent";
+import AnimauxComponent from "./components/buttonAnimal/AnimauxComponent";
+import HumainsComponent from "./components/buttonHuman/buttonHumanHumainsComponent";
+import MonstresComponent from "./components/buttonMonster/MonstresComponent";
 
 // Importe d'autres composants pour les catégories suivantes...
 
