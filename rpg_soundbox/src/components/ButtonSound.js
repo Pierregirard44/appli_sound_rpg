@@ -30,11 +30,10 @@ const ButtonSound = () => {
   return (
     <>
       {" "}
-
       <div id="containerButtonSound">
         <h2 id="titleCategory">Banger d'ambiançage medieval style</h2>
         <div id="containerButtonAmbiance">
-          <ButtonTavernTrend /> 
+          <ButtonTavernTrend />
           <ButtonBeerPouring />
         </div>
 

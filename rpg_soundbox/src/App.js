@@ -1,9 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ButtonSound from "./components/ButtonSound";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 // Importe tes composants spécifiques pour chaque catégorie ici
+import ButtonSound from "./components/ButtonSound";
 import AmbianceComponent from "./components/buttonAmbiance/AmbianceComponent";
 import ArmesComponent from "./components/buttonWeapon/WeaponComponent";
 import MagieComponent from "./components/buttonMagic/MagicComponent";
@@ -19,15 +19,15 @@ function App() {
       <Router>
         <Navbar />
         <h1 className="text-gray-50 text-4xl text-center pt-5">RPG SoundBox</h1>
-        <Switch>
+        <Routes>
           <Route path="/ambiance" component={AmbianceComponent} />
           <Route path="/armes" component={ArmesComponent} />
-          <Route path="/armes" component={MagieComponent} />
+          <Route path="/magie" component={MagieComponent} />
           <Route path="/animaux" component={AnimauxComponent} />
           <Route path="/humains" component={HumainsComponent} />
           <Route path="/monstres" component={MonstresComponent} />
-        </Switch>
-        <ButtonSound />
+          <Route path="/all" component={ButtonSound} />
+        </Routes>
       </Router>
     </div>
   );
