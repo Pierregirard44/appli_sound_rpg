@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 import ButtonSound from "./components/ButtonSound";
@@ -17,6 +22,7 @@ function App() {
         <Navbar />
         <h1 className="text-gray-50 text-4xl text-center pt-5">RPG SoundBox</h1>
         <Routes>
+          <Route path="/" element={<Navigate to="/all" replace />} />{" "}
           <Route path="/ambiance" element={<AmbianceComponent />} />
           <Route path="/armes" element={<ArmesComponent />} />
           <Route path="/magie" element={<MagicComponent />} />
