@@ -46,3 +46,15 @@
   width: 50%; /* Ajustez la largeur selon vos besoins */
   margin-right: 20px; /* Marge à droite pour l'équilibre */
 }
+
+.wip-gif {
+  margin-left: 25%;
+  width: 50%;
+  height: auto;
+}
+
+.wip-img {
+  margin-left: 35%;
+  width: 25%;
+  height: auto;
+}
