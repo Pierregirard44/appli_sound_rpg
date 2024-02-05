@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.wip-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 50%; /* Ajustez la largeur selon vos besoins */
+  margin-right: 20px; /* Marge à droite pour l'équilibre */
+}
