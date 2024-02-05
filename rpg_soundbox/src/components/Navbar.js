@@ -62,6 +62,12 @@ const Navbar = () => {
               </Link>
             </div>
           )}
+          <span className="cursor-pointer border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500">
+            Character sheet
+          </span>
+          <span className="cursor-pointer border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500">
+            Library
+          </span>
         </div>
       </div>
     </nav>
