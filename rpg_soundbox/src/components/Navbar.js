@@ -3,13 +3,20 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [dropdownTimeout, setDropdownTimeout] = useState(null);
 
   const showDropdownHandler = () => {
     setShowDropdown(true);
+    clearTimeout(dropdownTimeout); // Clear any existing timeout
   };
 
   const hideDropdownHandler = () => {
-    setShowDropdown(false);
+    // Set a timeout to hide the dropdown after a delay (e.g., 300 milliseconds)
+    const timeout = setTimeout(() => {
+      setShowDropdown(false);
+    }, 100);
+
+    setDropdownTimeout(timeout);
   };
 
   return (
