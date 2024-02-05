@@ -42,7 +42,7 @@ const Navbar = () => {
         default:
           break;
       }
-    }, 100);
+    }, 50);
 
     setDropdownTimeout(timeout);
   };
