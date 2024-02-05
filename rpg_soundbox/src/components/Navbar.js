@@ -57,8 +57,14 @@ const Navbar = () => {
         className="container flex items-center justify-center p-2 mx-auto capitalize dark:text-amber-500 font-family:Goudy"
       >
         {/* Créez une div pour le logo avec une classe spécifique */}
-        <div className="logo-container">
+        <div className="logo-container flex items-center">
           <img src={logo} alt="Logo" className="h-16 w-16" />
+          <div
+            id="title"
+            className="ml-4 container flex items-center justify-center p-2 capitalize dark:text-amber-500 font-family:Goudy"
+          >
+            RPG Soundbox
+          </div>
         </div>
 
         <Link
