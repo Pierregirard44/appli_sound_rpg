@@ -67,4 +67,6 @@
 
 #navbar {
   font-family: 'Goudy', sans-serif;
+  font-size: 1.25em;
+  justify-content: end;
 }

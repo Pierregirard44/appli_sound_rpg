@@ -53,7 +53,7 @@ const Navbar = () => {
     <nav className="bg-red-950">
       <div
         id="navbar"
-        className="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-amber-500 font-family:Goudy"
+        className="container flex items-center justify-center p-6 mx-auto capitalize dark:text-amber-500 font-family:Goudy"
       >
         <Link
           to="/"
@@ -71,7 +71,7 @@ const Navbar = () => {
             Soundbox
           </span>
           {showSoundboxDropdown && (
-            <div className="absolute bg-black text-gray-600 mt-1 p-2 rounded-md shadow-lg">
+            <div className="absolute  bg-red-900 dark:text-amber-500 mt-1 p-2 rounded-md shadow-lg">
               <Link to="/homesoundbox" className="block hover:text-white ml-2">
                 All sounds
               </Link>
@@ -106,7 +106,7 @@ const Navbar = () => {
             Character sheet
           </span>
           {showCharacterSheetDropdown && (
-            <div className="absolute bg-black text-gray-600 mt-1 p-2 rounded-md shadow-lg">
+            <div className="absolute  bg-red-900 dark:text-amber-500 mt-1 p-2 rounded-md shadow-lg">
               <Link to="/WIP" className="block hover:text-white ml-2">
                 New character
               </Link>
@@ -126,7 +126,7 @@ const Navbar = () => {
             Library
           </span>
           {showLibraryDropdown && (
-            <div className="absolute bg-black text-gray-600 mt-1 p-2 rounded-md shadow-lg">
+            <div className="absolute  bg-red-900 dark:text-amber-500 mt-1 p-2 rounded-md shadow-lg">
               <Link to="/WIP" className="block hover:text-white ml-2">
                 Spells
               </Link>
