@@ -14,6 +14,7 @@ import MagicComponent from "./components/buttonMagic/MagicComponent";
 import AnimauxComponent from "./components/buttonAnimal/AnimalComponent";
 import HumainsComponent from "./components/buttonHuman/HumanComponent";
 import MonstresComponent from "./components/buttonMonster/MonsterComponent";
+import WIP from "./components/WIP";
 
 function App() {
   return (
@@ -29,6 +30,14 @@ function App() {
           <Route path="/humans" element={<HumainsComponent />} />
           <Route path="/monsters" element={<MonstresComponent />} />
           <Route path="/homesoundbox" element={<ButtonSound />} />
+          <Route path="/newcharacter" element={<WIP />} />
+          <Route path="/characterlist" />
+          {/* Penser au user_id pour la route character list */}
+          <Route path="/spells" element={<WIP />} />
+          <Route path="/items" element={<WIP />} />
+          <Route path="/monsters" element={<WIP />} />
+          <Route path="/weapons" element={<WIP />} />
+          <Route path="/armors" element={<WIP />} />
         </Routes>
       </Router>
     </div>
