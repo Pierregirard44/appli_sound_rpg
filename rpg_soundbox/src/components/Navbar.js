@@ -81,7 +81,8 @@ const Navbar = () => {
           onMouseLeave={() => hideDropdownHandler("soundbox")}
         >
           <span className="cursor-pointer border-b-2 border-transparent hover:border-orange-500 ml-4">
-            Soundbox
+            Soundbox {" "}
+            <img src={triangle} alt="triangle" className="h-3 w-3 inline" />
           </span>
           {showSoundboxDropdown && (
             <div className="absolute  bg-red-900 dark:text-amber-500 mt-1 p-2 rounded-md shadow-lg">
@@ -116,7 +117,8 @@ const Navbar = () => {
           onMouseLeave={() => hideDropdownHandler("characterSheet")}
         >
           <span className="cursor-pointer border-b-2 border-transparent   hover:border-orange-500 ml-4">
-            Character sheet
+            Character sheet {" "}
+            <img src={triangle} alt="triangle" className="h-3 w-3 inline" />
           </span>
           {showCharacterSheetDropdown && (
             <div className="absolute  bg-red-900 dark:text-amber-500 mt-1 p-2 rounded-md shadow-lg">
@@ -136,7 +138,8 @@ const Navbar = () => {
           onMouseLeave={() => hideDropdownHandler("library")}
         >
           <span className="cursor-pointer border-b-2 border-transparent   hover:border-orange-500 ml-4">
-            Library
+            Library {" "}
+            <img src={triangle} alt="triangle" className="h-3 w-3 inline" />
           </span>
           {showLibraryDropdown && (
             <div className="absolute  bg-red-900 dark:text-amber-500 mt-1 p-2 rounded-md shadow-lg">

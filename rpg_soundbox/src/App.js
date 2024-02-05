@@ -6,7 +6,6 @@ import {
   Navigate,
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
-
 import ButtonSound from "./components/ButtonSound";
 import AmbianceComponent from "./components/buttonAmbiance/AmbianceComponent";
 import ArmesComponent from "./components/buttonWeapon/WeaponComponent";
@@ -15,6 +14,7 @@ import AnimauxComponent from "./components/buttonAnimal/AnimalComponent";
 import HumainsComponent from "./components/buttonHuman/HumanComponent";
 import MonstresComponent from "./components/buttonMonster/MonsterComponent";
 import WIP from "./components/WIP";
+import Home from "./components/Home";
 import "./App.css";
 import "./fonts/GoudyBookletter1911.otf";
 
@@ -24,7 +24,8 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Navigate to="/home" replace />} />{" "}
+          <Route path="/" element={<Navigate to="/Home" replace />} />{" "}
+          <Route path="/home" element={<Home />} />
           <Route path="/atmosphere" element={<AmbianceComponent />} />
           <Route path="/weapons" element={<ArmesComponent />} />
           <Route path="/magic" element={<MagicComponent />} />

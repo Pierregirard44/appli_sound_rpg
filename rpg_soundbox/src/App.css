@@ -82,3 +82,22 @@
   font-size: 1.5em;
   color: #D89839;
 }
+
+.home-container {
+  background-color: blanchedalmond;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 40%; /* Ajustez la largeur selon vos besoins */
+  margin-right: 20px; /* Marge à droite pour l'équilibre */
+  border-radius: 10px;
+}
+
+.home-content {
+  font-family: 'Goudy', sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+}
