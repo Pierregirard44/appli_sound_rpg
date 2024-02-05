@@ -70,3 +70,7 @@
   font-size: 1.25em;
   justify-content: end;
 }
+
+.logo-container {
+  margin-right: auto; 
+}
