@@ -54,7 +54,7 @@ const Navbar = () => {
     <nav className="bg-red-950">
       <div
         id="navbar"
-        className="container flex items-center justify-center p-2 mx-auto capitalize dark:text-amber-500 font-family:Goudy"
+        className="container flex items-center justify-center p-1 mx-auto capitalize dark:text-amber-500 font-family:Goudy"
       >
         {/* Créez une div pour le logo avec une classe spécifique */}
         <div className="logo-container flex items-center">
