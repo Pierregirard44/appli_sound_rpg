@@ -102,8 +102,12 @@ const Navbar = () => {
           </span>
           {showCharacterSheetDropdown && (
             <div className="absolute bg-black text-gray-600 mt-1 p-2 rounded-md shadow-lg">
-              {/* Contenu spécifique du dropdown pour Character Sheet */}
-              {/* ... */}
+              <Link to="/WIP" className="block hover:text-white ml-2">
+                New character
+              </Link>
+              <Link to="/WIP" className="block hover:text-white ml-2">
+                Character list
+              </Link>
             </div>
           )}
         </div>
@@ -118,8 +122,21 @@ const Navbar = () => {
           </span>
           {showLibraryDropdown && (
             <div className="absolute bg-black text-gray-600 mt-1 p-2 rounded-md shadow-lg">
-              {/* Contenu spécifique du dropdown pour Library */}
-              {/* ... */}
+              <Link to="/WIP" className="block hover:text-white ml-2">
+                Spells
+              </Link>
+              <Link to="/WIP" className="block hover:text-white ml-2">
+                Items
+              </Link>
+              <Link to="/WIP" className="block hover:text-white ml-2">
+                Monsters
+              </Link>
+              <Link to="/WIP" className="block hover:text-white ml-2">
+                Weapons
+              </Link>
+              <Link to="/WIP" className="block hover:text-white ml-2">
+                Armors
+              </Link>
             </div>
           )}
         </div>

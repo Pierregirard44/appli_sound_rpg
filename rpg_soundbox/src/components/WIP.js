@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-const MyComponent = () => {
+const WIP = () => {
 
   return (
     <div>
@@ -9,4 +9,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
+export default WIP;

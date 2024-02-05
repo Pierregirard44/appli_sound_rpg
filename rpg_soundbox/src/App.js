@@ -38,6 +38,7 @@ function App() {
           <Route path="/monsters" element={<WIP />} />
           <Route path="/weapons" element={<WIP />} />
           <Route path="/armors" element={<WIP />} />
+          <Route path="/WIP" element={<WIP />} />
         </Routes>
       </Router>
     </div>
