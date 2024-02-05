@@ -48,11 +48,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black">
-      <div className="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
+    <nav className="bg-red-950">
+      <div className="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-amber-500">
         <Link
           to="/"
-          className="border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500 mx-1.5 sm:mx-6"
+          className="border-b-2 border-transparent hover:border-orange-500 mx-1.5 sm:mx-6"
         >
           Home
         </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
           onMouseEnter={() => showDropdownHandler("soundbox")}
           onMouseLeave={() => hideDropdownHandler("soundbox")}
         >
-          <span className="cursor-pointer border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500 ml-4">
+          <span className="cursor-pointer border-b-2 border-transparent hover:border-orange-500 ml-4">
             Soundbox
           </span>
           {showSoundboxDropdown && (
@@ -97,7 +97,7 @@ const Navbar = () => {
           onMouseEnter={() => showDropdownHandler("characterSheet")}
           onMouseLeave={() => hideDropdownHandler("characterSheet")}
         >
-          <span className="cursor-pointer border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500 ml-4">
+          <span className="cursor-pointer border-b-2 border-transparent   hover:border-orange-500 ml-4">
             Character sheet
           </span>
           {showCharacterSheetDropdown && (
@@ -117,7 +117,7 @@ const Navbar = () => {
           onMouseEnter={() => showDropdownHandler("library")}
           onMouseLeave={() => hideDropdownHandler("library")}
         >
-          <span className="cursor-pointer border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500 ml-4">
+          <span className="cursor-pointer border-b-2 border-transparent   hover:border-orange-500 ml-4">
             Library
           </span>
           {showLibraryDropdown && (
