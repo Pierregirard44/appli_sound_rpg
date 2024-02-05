@@ -15,6 +15,8 @@ import AnimauxComponent from "./components/buttonAnimal/AnimalComponent";
 import HumainsComponent from "./components/buttonHuman/HumanComponent";
 import MonstresComponent from "./components/buttonMonster/MonsterComponent";
 import WIP from "./components/WIP";
+import "./App.css";
+import "./fonts/GoudyBookletter1911.otf";
 
 function App() {
   return (

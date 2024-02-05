@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "../App.css";
+import "../fonts/GoudyBookletter1911.otf";
 
 const Navbar = () => {
   const [showSoundboxDropdown, setShowSoundboxDropdown] = useState(false);
@@ -49,7 +51,10 @@ const Navbar = () => {
 
   return (
     <nav className="bg-red-950">
-      <div className="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-amber-500">
+      <div
+        id="navbar"
+        className="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-amber-500 font-family:Goudy"
+      >
         <Link
           to="/"
           className="border-b-2 border-transparent hover:border-orange-500 mx-1.5 sm:mx-6"

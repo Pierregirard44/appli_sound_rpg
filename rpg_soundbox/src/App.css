@@ -58,3 +58,13 @@
   width: 25%;
   height: auto;
 }
+
+@font-face {
+  font-family: "Goudy";   /*Can be any text*/
+  src: local("GoudyBookletter1911"),
+    url("./fonts/GoudyBookletter1911.otf") format("opentype");
+}
+
+#navbar {
+  font-family: 'Goudy', sans-serif;
+}
