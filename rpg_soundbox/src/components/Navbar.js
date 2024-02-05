@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
+  const showDropdownHandler = () => {
+    setShowDropdown(true);
+  };
+
+  const hideDropdownHandler = () => {
+    setShowDropdown(false);
   };
 
   return (
@@ -18,11 +22,12 @@ const Navbar = () => {
           Home
         </Link>
 
-        <div className="relative mx-1.5 sm:mx-6">
-          <span
-            onClick={toggleDropdown}
-            className="cursor-pointer border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500"
-          >
+        <div
+          className="relative mx-1.5 sm:mx-6"
+          onMouseEnter={showDropdownHandler}
+          onMouseLeave={hideDropdownHandler}
+        >
+          <span className="cursor-pointer border-b-2 border-transparent hover:text-white dark:hover:text-gray-200 hover:border-orange-500">
             Soundbox
           </span>
           {showDropdown && (
