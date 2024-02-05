@@ -7,13 +7,11 @@
 @tailwind utilities; */
 
 body {
-  background-image: url("./images/auberge.png");
+  background-image: url("./images/splashArtRPGSoundbox_gradient.png");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-#root {
-  background-color: rgba(0, 0, 0, 0.477);
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 button {
