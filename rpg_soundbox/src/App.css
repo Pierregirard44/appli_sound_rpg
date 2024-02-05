@@ -69,6 +69,9 @@
   font-family: 'Goudy', sans-serif;
   font-size: 1.25em;
   justify-content: end;
+  color: #D89839;
+  background-color: #37040E !important;
+
 }
 
 .logo-container {
@@ -77,4 +80,5 @@
 
 #title {
   font-size: 1.5em;
+  color: #D89839;
 }

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../App.css";
 import "../fonts/GoudyBookletter1911.otf";
 import logo from "../images/logo_golden.png";
+import triangle from "../images/triangle.png";
 
 const Navbar = () => {
   const [showSoundboxDropdown, setShowSoundboxDropdown] = useState(false);
@@ -51,7 +52,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-red-950">
+    <nav>
       <div
         id="navbar"
         className="container flex items-center justify-center p-1 mx-auto capitalize dark:text-amber-500 font-family:Goudy"
