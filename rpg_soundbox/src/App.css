@@ -84,15 +84,14 @@
 }
 
 .home-container {
+  z-index: -1;
   background-color: blanchedalmond;
   mix-blend-mode: luminosity;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+  position: relative;
   text-align: center;
-  width: 40%; /* Ajustez la largeur selon vos besoins */
-  margin-right: 20px; /* Marge à droite pour l'équilibre */
+  width: 40%;
+  margin-left: 55%;
+  margin-top: 5%;
   border-radius: 10px;
 }
 
