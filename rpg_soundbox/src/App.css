@@ -115,18 +115,12 @@ body {
 
 button {
   z-index: 1;
-  background-color: #2a0305; /* couleur de fond */
+  background-color: #2a0305 ; /* couleur de fond */
   border: none; /* si style différent : 2px solid black */
   color: white; /* couleur du texte */
-  padding: none; /* espace intérieur */
-  text-align: center; /* alignement du texte */
-  text-decoration: none; /* pas de soulignement */
-  display: inline-block;
-  font-size: 16px; /* taille du texte */
-  margin: 10px 10px; /* espace extérieur */
   cursor: pointer; /* forme du curseur */
   border-radius: 12px; /* coins arrondis */
-  width: calc(100% - 20px); /* largeur du bouton */
+  width: 60%; /* largeur du bouton */
   height: auto;
 }
 
@@ -173,7 +167,8 @@ img {
 
 #titleCategory {
   text-align: center;
-  font-style: italic;
+  font-family: "Goudy";
+  font-size: 2em;
   color: #ffffff;
 }
 
