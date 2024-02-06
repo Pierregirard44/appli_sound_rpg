@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 .App {
   text-align: center;
 }
@@ -100,3 +104,76 @@
   padding: 10px;
   border-radius: 10px;
 }
+
+body {
+  background-image: url("./images/splashArtRPGSoundbox_gradient.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+button {
+  z-index: 1;
+  background-color: #000000; /* couleur de fond */
+  border: none; /* si style différent : 2px solid black */
+  color: white; /* couleur du texte */
+  padding: none; /* espace intérieur */
+  text-align: center; /* alignement du texte */
+  text-decoration: none; /* pas de soulignement */
+  display: inline-block;
+  font-size: 16px; /* taille du texte */
+  margin: 10px 10px; /* espace extérieur */
+  cursor: pointer; /* forme du curseur */
+  border-radius: 12px; /* coins arrondis */
+  width: calc(100% - 20px); /* largeur du bouton */
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#containerButtonWeapon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
+  grid-gap: 5px; /* Marge entre les éléments */
+}
+
+#containerButtonAnimal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
+  grid-gap: 5px; /* Marge entre les éléments */
+}
+
+#containerButtonHuman {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
+  grid-gap: 5px; /* Marge entre les éléments */
+}
+
+#containerButtonMonster {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
+  grid-gap: 5px; /* Marge entre les éléments */
+}
+
+#containerButtonMagic {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
+  grid-gap: 5px; /* Marge entre les éléments */
+}
+
+#containerButtonAmbiance {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
+  grid-gap: 5px; /* Marge entre les éléments */
+}
+
+#titleCategory {
+  text-align: center;
+  font-style: italic;
+  color: #ffffff;
+}
+
