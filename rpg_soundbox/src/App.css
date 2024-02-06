@@ -85,7 +85,7 @@
 
 .home-container {
   background-color: blanchedalmond;
-  mix-blend-mode: multiply;
+  mix-blend-mode: luminosity;
   position: absolute;
   top: 50%;
   right: 0;
