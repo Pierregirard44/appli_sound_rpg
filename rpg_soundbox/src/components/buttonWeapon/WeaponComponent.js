@@ -5,19 +5,17 @@ import ButtonMaceHit from "./ButtonMaceHit";
 import ButtonBow from "./ButtonBow";
 
 const AmbianceAll = () => {
-    return (
-        <div id="containerButtonSound">
-            <h2 id="titleCategory">Gros sons de combats sa mère</h2>
-                <div id="containerButtonWeapon">
-                <ButtonSwordSlash />
-                <ButtonSwordFight />
-                <ButtonMaceHit />
-                <ButtonBow />
-                </div>
-        </div>
-    );
+  return (
+    <div id="containerButtonSound">
+      <h2 id="titleCategory">Weapons</h2>
+      <div id="containerButtonWeapon">
+        <ButtonSwordSlash />
+        <ButtonSwordFight />
+        <ButtonMaceHit />
+        <ButtonBow />
+      </div>
+    </div>
+  );
 };
 
 export default AmbianceAll;
-
-

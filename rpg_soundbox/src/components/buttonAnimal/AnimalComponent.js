@@ -9,23 +9,21 @@ import ButtonWolfHowl from "./ButtonWolfHowl";
 import ButtonCricket from "./ButtonCricket";
 
 const AmbianceAll = () => {
-    return (
-        <div id="containerButtonSound">
-            <h2 id="titleCategory">Sons de potits animaux Grrr Grrr</h2>
-                <div id="containerButtonAnimal">
-                <ButtonCatMeow />
-                <ButtonCrowSound />
-                <ButtonDogBarking />
-                <ButtonMonkeyScream />
-                <ButtonOwlNoise />
-                <ButtonTigerRoar />
-                <ButtonWolfHowl />
-                <ButtonCricket />
-                </div>
-        </div>
-    );
+  return (
+    <div id="containerButtonSound">
+      <h2 id="titleCategory">Animals</h2>
+      <div id="containerButtonAnimal">
+        <ButtonCatMeow />
+        <ButtonCrowSound />
+        <ButtonDogBarking />
+        <ButtonMonkeyScream />
+        <ButtonOwlNoise />
+        <ButtonTigerRoar />
+        <ButtonWolfHowl />
+        <ButtonCricket />
+      </div>
+    </div>
+  );
 };
 
 export default AmbianceAll;
-
-

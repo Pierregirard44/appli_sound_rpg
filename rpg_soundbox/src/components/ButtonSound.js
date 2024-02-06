@@ -45,7 +45,7 @@ const ButtonSound = () => {
           <ButtonBow />
         </div>
 
-        <h2 id="titleCategory">Spells</h2>
+        <h2 id="titleCategory">Magic</h2>
         <div id="containerButtonMagic">
           <ButtonFireball />
           <ButtonHeal />
