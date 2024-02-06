@@ -31,13 +31,13 @@ const ButtonSound = () => {
     <>
       {" "}
       <div id="containerButtonSound">
-        <h2 id="titleCategory">Banger d'ambiançage medieval style</h2>
+        <h2 id="titleCategory">Atmosphere</h2>
         <div id="containerButtonAmbiance">
           <ButtonTavernTrend />
           <ButtonBeerPouring />
         </div>
 
-        <h2 id="titleCategory">Gros sons de combats sa mère</h2>
+        <h2 id="titleCategory">Weapons</h2>
         <div id="containerButtonWeapon">
           <ButtonSwordSlash />
           <ButtonSwordFight />
@@ -45,13 +45,13 @@ const ButtonSound = () => {
           <ButtonBow />
         </div>
 
-        <h2 id="titleCategory">Fioouuu pan pan magic !!</h2>
+        <h2 id="titleCategory">Spells</h2>
         <div id="containerButtonMagic">
           <ButtonFireball />
           <ButtonHeal />
         </div>
 
-        <h2 id="titleCategory">Sons de potits animaux Grrr Grrr</h2>
+        <h2 id="titleCategory">Animals</h2>
         <div id="containerButtonAnimal">
           <ButtonCatMeow />
           <ButtonCrowSound />
@@ -63,7 +63,7 @@ const ButtonSound = () => {
           <ButtonCricket />
         </div>
 
-        <h2 id="titleCategory">And scream and shout and let it out</h2>
+        <h2 id="titleCategory">Humans</h2>
         <div id="containerButtonHuman">
           <ButtonLaughFemale />
           <ButtonLaughMale />
@@ -73,7 +73,7 @@ const ButtonSound = () => {
           <ButtonWarcryMale />
         </div>
 
-        <h2 id="titleCategory">Big Bad Monsters Oulalaaaaa</h2>
+        <h2 id="titleCategory">Monsters</h2>
         <div id="containerButtonMonster">
           <ButtonLaughDemoniac />
           <ButtonZombieGrowl />
