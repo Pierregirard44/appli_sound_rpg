@@ -136,37 +136,7 @@ button {
   margin: 0; /* Réinitialise la marge par défaut du bouton */
 }
 
-#containerButtonWeapon {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
-  grid-gap: 5px; /* Marge entre les éléments */
-}
-
-#containerButtonAnimal {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
-  grid-gap: 5px; /* Marge entre les éléments */
-}
-
-#containerButtonHuman {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
-  grid-gap: 5px; /* Marge entre les éléments */
-}
-
-#containerButtonMonster {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
-  grid-gap: 5px; /* Marge entre les éléments */
-}
-
-#containerButtonMagic {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
-  grid-gap: 5px; /* Marge entre les éléments */
-}
-
-#containerButtonAmbiance {
+#containerButton {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
   grid-gap: 5px; /* Marge entre les éléments */
@@ -178,4 +148,3 @@ button {
   font-size: 1.5em;
   color: #ffffff;
 }
-

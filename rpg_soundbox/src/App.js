@@ -1,18 +1,13 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import {BrowserRouter as Router,Route,Routes,Navigate,} from "react-router-dom";
 import Navbar from "./components/Navbar";
-import ButtonSound from "./components/ButtonSound";
-import AmbianceComponent from "./components/buttonAmbiance/AmbianceComponent";
-import ArmesComponent from "./components/buttonWeapon/WeaponComponent";
-import MagicComponent from "./components/buttonMagic/MagicComponent";
-import AnimauxComponent from "./components/buttonAnimal/AnimalComponent";
-import HumainsComponent from "./components/buttonHuman/HumanComponent";
-import MonstresComponent from "./components/buttonMonster/MonsterComponent";
+import ButtonSound from "./components/sounds/ButtonSound";
+import AmbianceComponent from "./components/sounds/buttonAmbiance/AmbianceComponent";
+import ArmesComponent from "./components/sounds/buttonWeapon/WeaponComponent";
+import MagicComponent from "./components/sounds/buttonMagic/MagicComponent";
+import AnimauxComponent from "./components/sounds/buttonAnimal/AnimalComponent";
+import HumainsComponent from "./components/sounds/buttonHuman/HumanComponent";
+import MonstresComponent from "./components/sounds/buttonMonster/MonsterComponent";
 import WIP from "./components/WIP";
 import Home from "./components/Home";
 import PageTest from "./components/PageTest";
