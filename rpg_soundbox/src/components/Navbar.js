@@ -226,37 +226,17 @@ const Navbar = () => {
                 </li>
                 <li className="py-2">
                   <Link to="/homesoundbox" className="hover:text-orange-500">
-                    All sounds
+                    SoundBox
                   </Link>
                 </li>
                 <li className="py-2">
-                  <Link to="/atmosphere" className="hover:text-orange-500">
-                    Atmosphere
+                  <Link to="/WIP" className="hover:text-orange-500">
+                    Character Sheet
                   </Link>
                 </li>
                 <li className="py-2">
-                  <Link to="/weapons" className="hover:text-orange-500">
-                    Weapons
-                  </Link>
-                </li>
-                <li className="py-2">
-                  <Link to="/magic" className="hover:text-orange-500">
-                    Magic
-                  </Link>
-                </li>
-                <li className="py-2">
-                  <Link to="/animals" className="hover:text-orange-500">
-                    Animal
-                  </Link>
-                </li>
-                <li className="py-2">
-                  <Link to="/humans" className="hover:text-orange-500">
-                    Humans
-                  </Link>
-                </li>
-                <li className="py-2">
-                  <Link to="/monsters" className="hover:text-orange-500">
-                    Monsters
+                  <Link to="/WIP" className="hover:text-orange-500">
+                    Library
                   </Link>
                 </li>
                 {/* Ajoute d'autres liens ici en suivant le même format */}
