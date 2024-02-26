@@ -2,18 +2,19 @@ import React, { useRef } from 'react';
 import monkeyScream from "../../../icons/monkeyScream.png";
 import monkeyScreamSound from "../../../sounds/monkeyScream.mp3";
 
-const MyComponent = () => {
+const MonkeyScreamButton = () => {
   const audioRef = useRef(null);
 
   const playSound = () => {
-        audioRef.current.play();
-        console.log("Ah ah ah ouuuuh!");
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
   };
 
   return (
     <div>
       <button onClick={playSound}>
-        <img src={monkeyScream} alt="icon" />
+        <img src={monkeyScream} alt="Monkey scream sound icon" />
       </button>
       <audio ref={audioRef}>
         <source src={monkeyScreamSound} type="audio/mp3" />
@@ -23,4 +24,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
+export default MonkeyScreamButton;

@@ -10,7 +10,6 @@ import HumainsComponent from "./components/sounds/buttonHuman/HumanComponent";
 import MonstresComponent from "./components/sounds/buttonMonster/MonsterComponent";
 import WIP from "./components/WIP";
 import Home from "./components/Home";
-import PageTest from "./components/PageTest";
 import "./App.css";
 import "./fonts/GoudyBookletter1911.otf";
 
@@ -38,7 +37,6 @@ function App() {
           <Route path="/weapons" element={<WIP />} />
           <Route path="/armors" element={<WIP />} />
           <Route path="/WIP" element={<WIP />} />
-          <Route path="/pagetest" element={<PageTest />} />
         </Routes>
       </Router>
     </div>

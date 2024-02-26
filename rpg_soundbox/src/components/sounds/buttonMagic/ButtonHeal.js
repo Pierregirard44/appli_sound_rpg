@@ -1,19 +1,20 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 import heal from "../../../icons/heal.png";
 import healSound from "../../../sounds/soin.mp3";
 
-const MyComponent = () => {
+const HealButton = () => {
   const audioRef = useRef(null);
 
   const playSound = () => {
-    audioRef.current.play();
-    console.log("#pansement");
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
   };
 
   return (
     <div>
       <button onClick={playSound}>
-        <img src={heal} alt="icon" />
+        <img src={heal} alt="Heal sound icon" />
       </button>
       <audio ref={audioRef}>
         <source src={healSound} type="audio/mp3" />
@@ -23,4 +24,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
+export default HealButton;

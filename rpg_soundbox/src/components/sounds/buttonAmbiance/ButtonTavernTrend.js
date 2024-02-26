@@ -2,18 +2,19 @@ import React, { useRef } from 'react';
 import tavernTrend from "../../../icons/tavernTrend.png";
 import tavernTrendSound from "../../../sounds/tavernTrend.mp3";
 
-const MyComponent = () => {
+const TavernTrendButton = () => {
   const audioRef = useRef(null);
 
   const playSound = () => {
-        audioRef.current.play();
-        console.log("Tututututtu tutu tututuuuuuuu");
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
   };
 
   return (
     <div>
       <button onClick={playSound}>
-        <img src={tavernTrend} alt="icon" />
+        <img src={tavernTrend} alt="Tavern trend icon" />
       </button>
       <audio ref={audioRef}>
         <source src={tavernTrendSound} type="audio/mp3" />
@@ -23,4 +24,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
+export default TavernTrendButton;
