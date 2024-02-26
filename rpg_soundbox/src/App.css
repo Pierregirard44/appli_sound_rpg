@@ -231,6 +231,8 @@ body {
   background-color: #2F030C !important;
   display: flex;
   flex-direction: column;
+  margin-top: 99px;
+  width: 15rem;
 }
 
 .items-center {
@@ -248,3 +250,4 @@ body {
 #soundBoxBurger {
   justify-content: flex-start;
 }
+
