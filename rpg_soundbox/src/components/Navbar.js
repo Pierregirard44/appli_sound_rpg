@@ -225,6 +225,7 @@ const Navbar = () => {
                     Home
                   </Link>
                 </li>
+                <hr className="w-32 h-0.2 bg-orange-500" />
                 <li className="py-2 relative">
                   <button
                     id="soundBoxBurger"
@@ -271,6 +272,7 @@ const Navbar = () => {
                     </div>
                   )}
                 </li>
+                <hr className="w-32 h-0.2 bg-orange-500" />
                 <li className="py-2">
                   <Link to="/WIP" className="hover:text-orange-500">
                     Character Sheet
@@ -281,6 +283,7 @@ const Navbar = () => {
                     />
                   </Link>
                 </li>
+                <hr className="w-32 h-0.2 bg-orange-500" />
                 <li className="py-2">
                   <Link to="/WIP" className="hover:text-orange-500">
                     Library
