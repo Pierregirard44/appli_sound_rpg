@@ -244,3 +244,7 @@ body {
 .h-6 {
   height: 3rem;
 }
+
+#soundBoxBurger {
+  justify-content: flex-start;
+}

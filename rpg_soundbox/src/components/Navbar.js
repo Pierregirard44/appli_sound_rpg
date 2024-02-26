@@ -227,6 +227,7 @@ const Navbar = () => {
                 </li>
                 <li className="py-2 relative">
                   <button
+                    id="soundBoxBurger"
                     onClick={() => setIsOpen(!isOpen)}
                     className="hover:text-orange-500"
                   >
