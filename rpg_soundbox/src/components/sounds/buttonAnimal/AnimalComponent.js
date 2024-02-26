@@ -12,7 +12,7 @@ const AnimalAll = () => {
   return (
     <div>
       <h2 id="titleCategory">Animals</h2>
-      <div id="containerButton">
+      <button id="containerButton"> 
         <ButtonCatMeow />
         <ButtonCrowSound />
         <ButtonDogBarking />
@@ -21,7 +21,7 @@ const AnimalAll = () => {
         <ButtonTigerRoar />
         <ButtonWolfHowl />
         <ButtonCricket />
-      </div>
+      </button>
     </div>
   );
 };

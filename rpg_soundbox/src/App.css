@@ -6,6 +6,24 @@
   text-align: center;
 }
 
+#containerButton {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#iconSound {
+  background-color: #37040E;
+  border-radius: 10%;
+  flex: 0 0 calc(16.66% - 10px); /* 100% / 6 - 10px de marge entre les boutons */
+  max-width: 20%;
+  margin: 5px;
+  cursor: pointer;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -72,10 +90,18 @@
 #navbar {
   font-family: 'Goudy', sans-serif;
   font-size: 1.25em;
-  justify-content: end;
   color: #D89839;
   background-color: #37040E !important;
 
+}
+
+.navlink {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.navlink:hover {
+  color: white
 }
 
 .logo-container {
@@ -111,35 +137,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-}
-
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  background-color: #2a0305;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 12px;;
-  max-width: 50%;
-  @media (max-width: 768px) {
-    max-width: 100%;
-  }
-  height: auto;
-  margin: 0; /* Réinitialise la marge par défaut du bouton */
-}
-
-#containerButton {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes égales */
-  grid-gap: 5px; /* Marge entre les éléments */
 }
 
 #titleCategory {

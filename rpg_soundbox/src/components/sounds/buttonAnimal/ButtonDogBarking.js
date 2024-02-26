@@ -13,7 +13,7 @@ const MyComponent = () => {
   return (
     <div>
       <button onClick={playSound}>
-        <img src={dogBarking} alt="icon" />
+        <img id="iconSound" src={dogBarking} alt="icon" />
       </button>
       <audio ref={audioRef}>
         <source src={dogBarkingSound} type="audio/mp3" />

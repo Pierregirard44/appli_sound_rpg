@@ -11,14 +11,16 @@ import MonstresComponent from "./components/sounds/buttonMonster/MonsterComponen
 import WIP from "./components/WIP";
 import Home from "./components/Home";
 import PageTest from "./components/PageTest";
-import "./App.css";
 import "./fonts/GoudyBookletter1911.otf";
+import NavbarII from "./components/NavbarII";
+import "./App.css";
 
 function App() {
   return (
     <div className="h-[100%]">
       <Router>
         <Navbar />
+        <NavbarII />
         <Routes>
           <Route path="/" element={<Navigate to="/Home" replace />} />{" "}
           <Route path="/home" element={<Home />} />

@@ -4,13 +4,13 @@ import ButtonTavernTrend from "./ButtonTavernTrend";
 
 const AmbianceAll = () => {
   return (
-    <div>
+    <>
       <h2 id="titleCategory">Atmosphere</h2>
-      <div id="containerButton">
-        <ButtonTavernTrend />
-        <ButtonBeerPouring />
-      </div>
-    </div>
+      <button id="containerButton"> 
+        <ButtonTavernTrend /> 
+        <ButtonBeerPouring /> 
+      </button>
+    </>
   );
 };
 
