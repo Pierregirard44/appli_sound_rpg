@@ -12,6 +12,7 @@ const Navbar = () => {
   const [showLibraryDropdown, setShowLibraryDropdown] = useState(false);
   const [dropdownTimeout, setDropdownTimeout] = useState(null);
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const showDropdownHandler = (dropdown) => {
     clearTimeout(dropdownTimeout); // Clear any existing timeout
@@ -88,10 +89,7 @@ const Navbar = () => {
             </span>
             {showSoundboxDropdown && (
               <div className="absolute  bg-red-900 dark:text-amber-500 mt-1 p-2 rounded-md shadow-lg">
-                <Link
-                  to="/homesoundbox"
-                  className="block hover:text-white ml-2"
-                >
+                <Link to="/homesoundbox" className="block hover:text-white ml-2">
                   All sounds
                 </Link>
                 <Link to="/atmosphere" className="block hover:text-white ml-2">
@@ -224,10 +222,37 @@ const Navbar = () => {
                     Home
                   </Link>
                 </li>
-                <li className="py-2">
-                  <Link to="/homesoundbox" className="hover:text-orange-500">
+                <li className="py-2 relative">
+                  <button onClick={() => setIsOpen(!isOpen)} className="hover:text-orange-500">
                     SoundBox
-                  </Link>
+                  </button>
+                  {isOpen && (
+                    <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                      <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                        <Link to="/homesoundbox" className="block hover:text-white ml-2">
+                           All sounds
+                        </Link>
+                        <Link to="/atmosphere" className="block hover:text-white ml-2">
+                          Atmosphere
+                        </Link>
+                        <Link to="/weapons" className="block hover:text-white ml-2">
+                          Weapons
+                        </Link>
+                        <Link to="/magic" className="block hover:text-white ml-2">
+                          Magic
+                        </Link>
+                        <Link to="/animals" className="block hover:text-white ml-2">
+                          Animal
+                        </Link>
+                        <Link to="/humans" className="block hover:text-white ml-2">
+                          Humans
+                        </Link>
+                        <Link to="/monsters" className="block hover:text-white ml-2">
+                          Monsters
+                        </Link>
+                      </div>
+                    </div>
+                  )}
                 </li>
                 <li className="py-2">
                   <Link to="/WIP" className="hover:text-orange-500">
