@@ -123,7 +123,7 @@ button {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  background-color: #2a0305;
+  background-color: #260209;
   border: none;
   cursor: pointer;
   border-radius: 12px;;
@@ -242,7 +242,7 @@ body {
   font-size: 1.5em;
   font-family: 'Goudy', sans-serif;
   color: #D89839;
-  background-color: #2F030C !important;
+  background-color: #1b0107 !important;
   display: flex;
   flex-direction: column;
   margin-top: 99px;
@@ -264,4 +264,5 @@ body {
 
 #soundBoxBurger {
   justify-content: flex-start;
+  background-color: none !important;
 }

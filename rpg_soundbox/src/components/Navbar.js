@@ -221,26 +221,20 @@ const Navbar = () => {
               {/* Ajoute ici tes éléments de menu */}
               <ul id="burgerlist">
                 <li className="py-2">
-                  <Link to="/" className="hover:text-orange-500">
-                    Home
-                  </Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <hr className="w-32 h-0.2 mt-6 mb-6 border border-solid border-orange-500" />
                 <li className="py-2 relative">
-                  <button
-                    id="soundBoxBurger"
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="hover:text-orange-500"
-                  >
+                  <div id="soundBoxBurger" onClick={() => setIsOpen(!isOpen)}>
                     SoundBox
                     <img
                       src={triangle}
                       alt="triangle"
                       className="h-3 w-3 inline"
                     />
-                  </button>
+                  </div>
                   {isOpen && (
-                    <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+                    <div className="absolute left-0 mt-2 w-48">
                       <div
                         className="py-1"
                         role="menu"
@@ -274,7 +268,7 @@ const Navbar = () => {
                 </li>
                 <hr className="w-32 h-0.2 mt-6 mb-6 border border-solid border-orange-500" />
                 <li className="py-2">
-                  <Link to="/WIP" className="hover:text-orange-300">
+                  <Link to="/WIP">
                     Character Sheet
                     <img
                       src={triangle}
@@ -285,7 +279,7 @@ const Navbar = () => {
                 </li>
                 <hr className="w-32 h-0.2 mt-6 mb-6 border border-solid border-orange-500" />
                 <li className="py-2">
-                  <Link to="/WIP" className="hover:text-orange-500">
+                  <Link to="/WIP">
                     Library
                     <img
                       src={triangle}
