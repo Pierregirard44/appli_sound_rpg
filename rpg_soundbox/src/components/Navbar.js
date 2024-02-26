@@ -225,7 +225,7 @@ const Navbar = () => {
                     Home
                   </Link>
                 </li>
-                <hr className="w-32 h-0.2 bg-orange-500" />
+                <hr className="w-32 h-0.2 mt-6 mb-6 border border-solid border-orange-500" />
                 <li className="py-2 relative">
                   <button
                     id="soundBoxBurger"
@@ -272,9 +272,9 @@ const Navbar = () => {
                     </div>
                   )}
                 </li>
-                <hr className="w-32 h-0.2 bg-orange-500" />
+                <hr className="w-32 h-0.2 mt-6 mb-6 border border-solid border-orange-500" />
                 <li className="py-2">
-                  <Link to="/WIP" className="hover:text-orange-500">
+                  <Link to="/WIP" className="hover:text-orange-300">
                     Character Sheet
                     <img
                       src={triangle}
@@ -283,7 +283,7 @@ const Navbar = () => {
                     />
                   </Link>
                 </li>
-                <hr className="w-32 h-0.2 bg-orange-500" />
+                <hr className="w-32 h-0.2 mt-6 mb-6 border border-solid border-orange-500" />
                 <li className="py-2">
                   <Link to="/WIP" className="hover:text-orange-500">
                     Library
