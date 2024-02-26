@@ -184,11 +184,6 @@ button {
   #title {
     visibility: hidden;
   }
-}
-
-body {
-  overflow-x: hidden;
-  overflow-y: hidden;
   .home-container {
     z-index: -1;
     background-color: blanchedalmond;
@@ -201,9 +196,15 @@ body {
     border-radius: 10px;
   }
   
-  .home-content {
-    font-family: 'Goudy', sans-serif;
-    padding: 10px;
-    border-radius: 10px;
-  }
+.home-content {
+  font-family: 'Goudy', sans-serif;
+  padding: 10px;
+  border-radius: 10px;
 }
+}
+
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
