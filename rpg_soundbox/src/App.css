@@ -202,3 +202,9 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+#burgerlist {
+  font-size: 1.5em;
+  font-family: 'Goudy', sans-serif;
+  color: #D89839;
+}

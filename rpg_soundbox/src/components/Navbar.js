@@ -216,9 +216,9 @@ const Navbar = () => {
 
           {/* Menu */}
           {isMenuOpen && (
-            <div className="fixed top-0 left-0 w-full h-50 flex items-center justify-center bg-black opacity-90">
+            <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black opacity-90">
               {/* Ajoute ici tes éléments de menu */}
-              <ul className="text-orange-500">
+              <ul className="text-white">
                 <li className="py-2">
                   <Link to="/" className="hover:text-orange-500">
                     Home
