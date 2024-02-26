@@ -232,6 +232,11 @@ const Navbar = () => {
                     className="hover:text-orange-500"
                   >
                     SoundBox
+                    <img
+                      src={triangle}
+                      alt="triangle"
+                      className="h-3 w-3 inline"
+                    />
                   </button>
                   {isOpen && (
                     <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
@@ -269,11 +274,21 @@ const Navbar = () => {
                 <li className="py-2">
                   <Link to="/WIP" className="hover:text-orange-500">
                     Character Sheet
+                    <img
+                      src={triangle}
+                      alt="triangle"
+                      className="h-3 w-3 inline"
+                    />
                   </Link>
                 </li>
                 <li className="py-2">
                   <Link to="/WIP" className="hover:text-orange-500">
                     Library
+                    <img
+                      src={triangle}
+                      alt="triangle"
+                      className="h-3 w-3 inline"
+                    />
                   </Link>
                 </li>
                 {/* Ajoute d'autres liens ici en suivant le même format */}

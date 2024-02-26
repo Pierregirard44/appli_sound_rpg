@@ -233,6 +233,7 @@ body {
   flex-direction: column;
   margin-top: 99px;
   width: 15rem;
+  align-items: center;
 }
 
 .items-center {
