@@ -184,4 +184,21 @@ button {
   #title {
     visibility: hidden;
   }
+  .home-container {
+    z-index: -1;
+    background-color: blanchedalmond;
+    mix-blend-mode: luminosity;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 10px;
+  }
+  
+  .home-content {
+    font-family: 'Goudy', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+  }
 }
