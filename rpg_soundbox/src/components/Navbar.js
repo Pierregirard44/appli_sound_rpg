@@ -89,7 +89,10 @@ const Navbar = () => {
             </span>
             {showSoundboxDropdown && (
               <div className="absolute  bg-red-900 dark:text-amber-500 mt-1 p-2 rounded-md shadow-lg">
-                <Link to="/homesoundbox" className="block hover:text-white ml-2">
+                <Link
+                  to="/homesoundbox"
+                  className="block hover:text-white ml-2"
+                >
                   All sounds
                 </Link>
                 <Link to="/atmosphere" className="block hover:text-white ml-2">
@@ -214,7 +217,7 @@ const Navbar = () => {
 
           {/* Menu */}
           {isMenuOpen && (
-            <div className="fixed top-0 left-0 w-full h-50 flex items-center justify-center bg-black opacity-90">
+            <div className="fixed top-0 right-0 w-50 h-full flex items-center justify-end">
               {/* Ajoute ici tes éléments de menu */}
               <ul id="burgerlist">
                 <li className="py-2">
@@ -223,31 +226,40 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="py-2 relative">
-                  <button onClick={() => setIsOpen(!isOpen)} className="hover:text-orange-500">
+                  <button
+                    id="soundBoxBurger"
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="hover:text-orange-500"
+                  >
                     SoundBox
                   </button>
                   {isOpen && (
-                    <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                      <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                        <Link to="/homesoundbox" className="block hover:text-white ml-2">
-                           All sounds
+                    <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+                      <div
+                        className="py-1"
+                        role="menu"
+                        aria-orientation="vertical"
+                        aria-labelledby="options-menu"
+                      >
+                        <Link to="/homesoundbox" className="block ">
+                          All sounds
                         </Link>
-                        <Link to="/atmosphere" className="block hover:text-white ml-2">
+                        <Link to="/atmosphere" className="block ">
                           Atmosphere
                         </Link>
-                        <Link to="/weapons" className="block hover:text-white ml-2">
+                        <Link to="/weapons" className="block ">
                           Weapons
                         </Link>
-                        <Link to="/magic" className="block hover:text-white ml-2">
+                        <Link to="/magic" className="block ">
                           Magic
                         </Link>
-                        <Link to="/animals" className="block hover:text-white ml-2">
+                        <Link to="/animals" className="block ">
                           Animal
                         </Link>
-                        <Link to="/humans" className="block hover:text-white ml-2">
+                        <Link to="/humans" className="block ">
                           Humans
                         </Link>
-                        <Link to="/monsters" className="block hover:text-white ml-2">
+                        <Link to="/monsters" className="block">
                           Monsters
                         </Link>
                       </div>
