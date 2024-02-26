@@ -2,18 +2,19 @@ import React, { useRef } from 'react';
 import catMeow from "../../../icons/catMeow.png";
 import catMeowSound from "../../../sounds/catMeow.mp3";
 
-const MyComponent = () => {
+const CatMeowButton = () => {
   const audioRef = useRef(null);
 
   const playSound = () => {
-        audioRef.current.play();
-        console.log("Miaou");
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
   };
 
   return (
     <div>
       <button onClick={playSound}>
-        <img src={catMeow} alt="icon" />
+        <img src={catMeow} alt="Cat meow icon" />
       </button>
       <audio ref={audioRef}>
         <source src={catMeowSound} type="audio/mp3" />
@@ -23,4 +24,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
+export default CatMeowButton;

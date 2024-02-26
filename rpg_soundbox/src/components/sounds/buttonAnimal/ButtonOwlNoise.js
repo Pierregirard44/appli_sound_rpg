@@ -2,18 +2,19 @@ import React, { useRef } from 'react';
 import owlNoise from "../../../icons/owlNoise.png";
 import owlNoiseSound from "../../../sounds/owlNoise.mp3";
 
-const MyComponent = () => {
+const OwlNoiseButton = () => {
   const audioRef = useRef(null);
 
   const playSound = () => {
-        audioRef.current.play();
-        console.log("OUuuuuuuuuhh Ooouuuuuuhhhhh");
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
   };
 
   return (
     <div>
       <button onClick={playSound}>
-        <img src={owlNoise} alt="icon" />
+        <img src={owlNoise} alt="Owl noise sound icon" />
       </button>
       <audio ref={audioRef}>
         <source src={owlNoiseSound} type="audio/mp3" />
@@ -23,4 +24,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
+export default OwlNoiseButton;

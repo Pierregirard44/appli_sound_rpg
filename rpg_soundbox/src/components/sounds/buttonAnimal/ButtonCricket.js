@@ -1,19 +1,20 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 import cricket from "../../../icons/cricket.png";
 import cricketSound from "../../../sounds/cricket.mp3";
 
-const MyComponent = () => {
+const CricketSoundButton = () => {
   const audioRef = useRef(null);
 
   const playSound = () => {
-    audioRef.current.play();
-    console.log("criii criii");
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
   };
 
   return (
     <div>
       <button onClick={playSound}>
-        <img src={cricket} alt="icon" />
+        <img src={cricket} alt="Cricket sound icon" />
       </button>
       <audio ref={audioRef}>
         <source src={cricketSound} type="audio/mp3" />
@@ -23,4 +24,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
+export default CricketSoundButton;

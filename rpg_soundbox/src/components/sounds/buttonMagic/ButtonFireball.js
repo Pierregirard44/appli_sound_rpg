@@ -1,19 +1,20 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 import fireball from "../../../icons/fireball.png";
 import fireballSound from "../../../sounds/fireball.mp3";
 
-const MyComponent = () => {
+const FireballButton = () => {
   const audioRef = useRef(null);
 
   const playSound = () => {
-    audioRef.current.play();
-    console.log("vouuush PAOW !");
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
   };
 
   return (
     <div>
       <button onClick={playSound}>
-        <img src={fireball} alt="icon" />
+        <img src={fireball} alt="Fireball sound icon" />
       </button>
       <audio ref={audioRef}>
         <source src={fireballSound} type="audio/mp3" />
@@ -23,4 +24,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
+export default FireballButton;
