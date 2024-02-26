@@ -145,7 +145,20 @@ button {
   text-align: center;
   font-family: "Goudy";
   font-size: 1.5em;
-  color: #ffffff;
+  color: #eea83f;
+  background-color: #2F030C;
+  border-radius: 12px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 40%;
+  width: 20rem;
+}
+
+@media(max-width: 768px) {
+  #titleCategory{ 
+    width: 10rem;
+    margin-left: 35%;
+  }
 }
 
 #navbar {
@@ -222,7 +235,7 @@ button {
 
 body {
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 #burgerlist {
