@@ -216,7 +216,7 @@ const Navbar = () => {
 
           {/* Menu */}
           {isMenuOpen && (
-            <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
+            <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-red-900 opacity-90">
               {/* Ajoute ici tes éléments de menu */}
               <ul className="text-white">
                 <li className="py-2">
