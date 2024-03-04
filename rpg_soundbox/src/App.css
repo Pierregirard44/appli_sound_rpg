@@ -200,9 +200,9 @@ button {
 
 
 @media (max-width: 820px) {
-  #title {
+  /* #title {
     visibility: hidden;
-  }
+  } */
   .home-container {
     z-index: -1;
     background-color: blanchedalmond;
