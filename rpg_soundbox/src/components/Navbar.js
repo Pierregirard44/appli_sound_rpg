@@ -191,7 +191,10 @@ const Navbar = () => {
 
             {/* Bouton Burger */}
             <button
-              onClick={() => setMenuOpen(!isMenuOpen)}
+              onClick={() => {
+                setMenuOpen(!isMenuOpen);
+                document.body.classList.toggle("overflow-hidden", !isMenuOpen);
+              }}
               className="text-amber-500 cursor-pointer focus:outline-none"
             >
               <svg
