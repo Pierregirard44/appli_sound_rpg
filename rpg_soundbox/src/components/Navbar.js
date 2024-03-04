@@ -245,7 +245,7 @@ const Navbar = () => {
                       />
                     </div>
                     {isOpen && (
-                      <div className="absolute left-0 mt-2 w-48">
+                      <div className="content-center mt-2 w-48">
                         <div
                           className="py-1"
                           role="menu"
