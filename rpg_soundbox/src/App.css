@@ -272,3 +272,19 @@ body {
   justify-content: flex-start;
   background-color: none !important;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Utilisez une couleur sombre semi-transparente */
+  backdrop-filter: blur(8px); /* Ajoute un flou au fond */
+  z-index: 0; /* Assurez-vous que l'overlay est au-dessus de la navbar */
+}
+
+.main-container {
+  position: relative;
+  z-index: 1; /* Assurez-vous que le contenu principal est au-dessus de l'overlay de la navbar */
+}
