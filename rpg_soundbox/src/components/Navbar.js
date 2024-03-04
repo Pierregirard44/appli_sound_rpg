@@ -13,7 +13,6 @@ const Navbar = () => {
   const [dropdownTimeout, setDropdownTimeout] = useState(null);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [isBlurry, setIsBlurry] = useState(false);
 
   const showDropdownHandler = (dropdown) => {
     clearTimeout(dropdownTimeout); // Clear any existing timeout
@@ -53,17 +52,7 @@ const Navbar = () => {
 
     setDropdownTimeout(timeout);
 
-  }
-  
-  useEffect(() => {
-    if (isBlurry) {
-      document.body.classList.add("menu-blur");
-    } else {
-      document.body.classList.remove("menu-blur");
-    }
-  }, [isBlurry]);
-  
-  ;
+  };
 
   return (
     <nav>
@@ -242,7 +231,7 @@ const Navbar = () => {
                 </li>
                 <hr className="w-32 h-0.2 mt-6 mb-6 border border-solid border-orange-500" />
                 <li className="py-2 relative">
-                  <div id="soundBoxBurger" onClick={() => {setIsOpen(!isOpen) ; setIsBlurry(!isBlurry)}}>
+                  <div id="soundBoxBurger" onClick={() => {setIsOpen(!isOpen)}}>
                     SoundBox
                     <img
                       src={triangle}
