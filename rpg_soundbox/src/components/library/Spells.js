@@ -27,9 +27,7 @@ const Spells = () => {
           <div key={index} className={`col-md-${12 / columnsPerRow}`}>
             <div className="card" style={{ width: "100%", margin: "0.5rem" }}>
               <div className="card-body">
-                <Link to={`/DetailPage/${spell.name}`}>
-                  <h5 className="card-title">{spell.name}</h5>
-                </Link>
+                <h5 className="card-title">{spell.name}</h5>
               </div>
             </div>
           </div>
