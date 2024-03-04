@@ -13,7 +13,7 @@ import MagicComponent from "./components/sounds/buttonMagic/MagicComponent";
 import AnimauxComponent from "./components/sounds/buttonAnimal/AnimalComponent";
 import HumainsComponent from "./components/sounds/buttonHuman/HumanComponent";
 import MonstresComponent from "./components/sounds/buttonMonster/MonsterComponent";
-import SpellComponent from "./components/library/Spells";
+import SpellsComponent from "./components/library/Spells";
 import ItemComponent from "./components/library/Items";
 import WIP from "./components/WIP";
 import Home from "./components/Home";
@@ -38,7 +38,7 @@ function App() {
           <Route path="/newcharacter" element={<WIP />} />
           <Route path="/characterlist" />
           {/* Penser au user_id pour la route character list */}
-          <Route path="/spells" element={<SpellComponent />} />
+          <Route path="/spells" element={<SpellsComponent />} />
           <Route path="/items" element={<ItemComponent />} />
           <Route path="/monsters" element={<WIP />} />
           <Route path="/weapons" element={<WIP />} />

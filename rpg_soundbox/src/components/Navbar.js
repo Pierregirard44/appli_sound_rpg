@@ -153,7 +153,7 @@ const Navbar = () => {
               </span>
               {showLibraryDropdown && (
                 <div className="absolute  bg-red-900 dark:text-amber-500 mt-1 p-2 rounded-md shadow-lg">
-                  <Link to="/WIP" className="block hover:text-white ml-2">
+                  <Link to="/spells" className="block hover:text-white ml-2">
                     Spells
                   </Link>
                   <Link to="/WIP" className="block hover:text-white ml-2">
