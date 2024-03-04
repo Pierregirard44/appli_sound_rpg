@@ -286,3 +286,18 @@ body {
 .overflow-hidden {
   overflow: hidden;
 }
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Crée quatre colonnes égales */
+  grid-gap: 5px; /* Marge entre les éléments */
+  background-color: #37040E;
+  color: #D89839;
+  font-family: 'Goudy', sans-serif;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  };
+  @media (max-width: 560px) {
+    grid-template-columns: repeat(2, 1fr);
+  };
+}
