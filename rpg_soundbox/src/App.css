@@ -17,6 +17,12 @@
   }
 }
 
+.menu-blur {
+  filter: blur(5px); /* Réglez le flou selon vos préférences */
+  background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond foncée */
+  overflow: hidden; /* Empêche le défilement de la page */
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

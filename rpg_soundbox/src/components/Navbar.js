@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import "../fonts/GoudyBookletter1911.otf";
@@ -13,6 +13,7 @@ const Navbar = () => {
   const [dropdownTimeout, setDropdownTimeout] = useState(null);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isBlurry, setIsBlurry] = useState(false);
 
   const showDropdownHandler = (dropdown) => {
     clearTimeout(dropdownTimeout); // Clear any existing timeout
@@ -51,7 +52,18 @@ const Navbar = () => {
     }, 50);
 
     setDropdownTimeout(timeout);
-  };
+
+  }
+  
+  useEffect(() => {
+    if (isBlurry) {
+      document.body.classList.add("menu-blur");
+    } else {
+      document.body.classList.remove("menu-blur");
+    }
+  }, [isBlurry]);
+  
+  ;
 
   return (
     <nav>
@@ -215,17 +227,22 @@ const Navbar = () => {
             </svg>
           </button>
 
+          
+
           {/* Menu */}
+
+          
           {isMenuOpen && (
             <div className="fixed top-0 right-0 w-50 h-full flex items-center justify-end">
               {/* Ajoute ici tes éléments de menu */}
+              
               <ul id="burgerlist">
                 <li className="py-2">
                   <Link to="/">Home</Link>
                 </li>
                 <hr className="w-32 h-0.2 mt-6 mb-6 border border-solid border-orange-500" />
                 <li className="py-2 relative">
-                  <div id="soundBoxBurger" onClick={() => setIsOpen(!isOpen)}>
+                  <div id="soundBoxBurger" onClick={() => {setIsOpen(!isOpen) ; setIsBlurry(!isBlurry)}}>
                     SoundBox
                     <img
                       src={triangle}
