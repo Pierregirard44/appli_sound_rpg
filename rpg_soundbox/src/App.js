@@ -1,5 +1,10 @@
 import React from "react";
-import {BrowserRouter as Router,Route,Routes,Navigate,} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ButtonSound from "./components/sounds/ButtonSound";
 import AmbianceComponent from "./components/sounds/buttonAmbiance/AmbianceComponent";
@@ -8,6 +13,8 @@ import MagicComponent from "./components/sounds/buttonMagic/MagicComponent";
 import AnimauxComponent from "./components/sounds/buttonAnimal/AnimalComponent";
 import HumainsComponent from "./components/sounds/buttonHuman/HumanComponent";
 import MonstresComponent from "./components/sounds/buttonMonster/MonsterComponent";
+import SpellComponent from "./components/library/Spells";
+import ItemComponent from "./components/library/Items";
 import WIP from "./components/WIP";
 import Home from "./components/Home";
 import "./App.css";
@@ -31,8 +38,8 @@ function App() {
           <Route path="/newcharacter" element={<WIP />} />
           <Route path="/characterlist" />
           {/* Penser au user_id pour la route character list */}
-          <Route path="/spells" element={<WIP />} />
-          <Route path="/items" element={<WIP />} />
+          <Route path="/spells" element={<SpellComponent />} />
+          <Route path="/items" element={<ItemComponent />} />
           <Route path="/monsters" element={<WIP />} />
           <Route path="/weapons" element={<WIP />} />
           <Route path="/armors" element={<WIP />} />
